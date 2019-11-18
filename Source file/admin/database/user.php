@@ -1,1 +1,3 @@
-Sửa
+<?php 
+echo "ádasd";
+ ?>
