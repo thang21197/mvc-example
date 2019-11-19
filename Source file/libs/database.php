@@ -1,4 +1,5 @@
 <?php 
+if (!defined('IN_SITE')) die ('The request not found');
 $conn=null;
 function db_connect(){
 	global $conn;
