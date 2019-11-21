@@ -1,3 +1,4 @@
+
 <?php 
 $error=array();
 // Kiểm tra nếu là admin thì redirect
@@ -39,12 +40,15 @@ if (is_submit('login')) {
 
 }
  ?>
+
+
 <?php include_once('widgets/header.php'); ?>
 <h1>Trang đăng nhập!</h1>
 <form method="post" action="">
     <table>
         <tr>
             <td>Username</td>
+
             <td><input type="text" name="username" value=""/><?php show_error($error,'username'); ?></td>
         </tr>
         <tr>
@@ -54,6 +58,15 @@ if (is_submit('login')) {
         </tr>
         <tr>
             <td><input type="hidden" name="request_name" value="login"/></td>
+            <td><input type="text" name="username" value=""/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" value=""/></td>
+        </tr>
+        <tr>
+            <td></td>
+
             <td><input type="submit" name="login-btn" value="Đăng nhập"/></td>
         </tr>
     </table>

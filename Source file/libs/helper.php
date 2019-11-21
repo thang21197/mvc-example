@@ -1,5 +1,6 @@
 <?php 
 if (!defined('IN_SITE')) die ('The request not found');
+
 // Hàm tạo URL
 function base_url($uri=''){
  return 'http://localhost/mvc-example/'.$uri;

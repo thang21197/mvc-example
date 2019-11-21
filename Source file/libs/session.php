@@ -1,7 +1,9 @@
 <?php 
 if (!defined('IN_SITE')) die ('The request not found');
 // Gán session (SET)
+
 session_start();
+
 function session_set($key,$val)
 {
 	$_SESSION[$key]=$val;
